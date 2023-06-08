@@ -259,5 +259,3 @@ require (
 	sigs.k8s.io/kind v0.17.0 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
-
-replace github.com/goreleaser/goreleaser => github.com/windmeup/goreleaser v0.0.0-20230608030237-c607ff04fc32
