@@ -1077,6 +1077,8 @@ type Project struct {
 
 	// should be set if using Gitea
 	GiteaURLs GiteaURLs `yaml:"gitea_urls,omitempty" json:"gitea_urls,omitempty"`
+
+	Monorepo Monorepo `yaml:"monorepo,omitempty" json:"monorepo,omitempty"`
 }
 
 type GoMod struct {
