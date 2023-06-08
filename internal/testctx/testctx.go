@@ -4,8 +4,8 @@ package testctx
 import (
 	"time"
 
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/windmeup/goreleaser/pkg/config"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 // Opt is an option for a test context.

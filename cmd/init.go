@@ -5,8 +5,8 @@ import (
 	"os"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/static"
 	"github.com/spf13/cobra"
+	"github.com/windmeup/goreleaser/internal/static"
 )
 
 type initCmd struct {

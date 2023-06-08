@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/pkg/context"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 func TestSkip(t *testing.T) {

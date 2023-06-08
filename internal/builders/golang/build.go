@@ -13,13 +13,13 @@ import (
 	"time"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/builders/buildtarget"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	api "github.com/goreleaser/goreleaser/pkg/build"
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
 	"github.com/imdario/mergo"
+	"github.com/windmeup/goreleaser/internal/artifact"
+	"github.com/windmeup/goreleaser/internal/builders/buildtarget"
+	"github.com/windmeup/goreleaser/internal/tmpl"
+	api "github.com/windmeup/goreleaser/pkg/build"
+	"github.com/windmeup/goreleaser/pkg/config"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 // Default builder instance.

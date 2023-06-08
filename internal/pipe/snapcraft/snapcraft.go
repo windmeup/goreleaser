@@ -12,15 +12,15 @@ import (
 	"strings"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/gio"
-	"github.com/goreleaser/goreleaser/internal/ids"
-	"github.com/goreleaser/goreleaser/internal/pipe"
-	"github.com/goreleaser/goreleaser/internal/semerrgroup"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	"github.com/goreleaser/goreleaser/internal/yaml"
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/windmeup/goreleaser/internal/artifact"
+	"github.com/windmeup/goreleaser/internal/gio"
+	"github.com/windmeup/goreleaser/internal/ids"
+	"github.com/windmeup/goreleaser/internal/pipe"
+	"github.com/windmeup/goreleaser/internal/semerrgroup"
+	"github.com/windmeup/goreleaser/internal/tmpl"
+	"github.com/windmeup/goreleaser/internal/yaml"
+	"github.com/windmeup/goreleaser/pkg/config"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 const releasesExtra = "releases"
@@ -323,7 +323,7 @@ func create(ctx *context.Context, snap config.Snapcraft, arch string, binaries [
 		}
 
 		// TODO: test that the correct binary is used in Command
-		// See https://github.com/goreleaser/goreleaser/pull/1449
+		// See https://github.com/windmeup/goreleaser/pull/1449
 		appMetadata := AppMetadata{
 			Command: strings.TrimSpace(strings.Join([]string{
 				command,
@@ -386,7 +386,7 @@ func create(ctx *context.Context, snap config.Snapcraft, arch string, binaries [
 	}
 
 	log.WithField("file", file).Debugf("writing metadata file")
-	if err = os.WriteFile(file, out, 0o644); err != nil { //nolint: gosec
+	if err = os.WriteFile(file, out, 0o644); err != nil { // nolint: gosec
 		return err
 	}
 

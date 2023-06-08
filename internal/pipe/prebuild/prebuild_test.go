@@ -3,9 +3,9 @@ package prebuild
 import (
 	"testing"
 
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/pkg/config"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 func TestRun(t *testing.T) {

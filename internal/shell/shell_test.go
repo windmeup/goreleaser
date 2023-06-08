@@ -4,9 +4,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/shell"
-	"github.com/goreleaser/goreleaser/internal/testctx"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/shell"
+	"github.com/windmeup/goreleaser/internal/testctx"
 )
 
 func TestRunCommand(t *testing.T) {

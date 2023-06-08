@@ -4,9 +4,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/pkg/context"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/testctx"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 func TestRelease(t *testing.T) {

@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/pkg/build"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/windmeup/goreleaser/internal/artifact"
+	"github.com/windmeup/goreleaser/pkg/build"
+	"github.com/windmeup/goreleaser/pkg/context"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 )

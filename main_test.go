@@ -3,8 +3,8 @@ package main
 import (
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/golden"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/golden"
 )
 
 func TestVersion(t *testing.T) {

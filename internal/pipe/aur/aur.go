@@ -12,13 +12,13 @@ import (
 	"text/template"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/client"
-	"github.com/goreleaser/goreleaser/internal/commitauthor"
-	"github.com/goreleaser/goreleaser/internal/pipe"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/windmeup/goreleaser/internal/artifact"
+	"github.com/windmeup/goreleaser/internal/client"
+	"github.com/windmeup/goreleaser/internal/commitauthor"
+	"github.com/windmeup/goreleaser/internal/pipe"
+	"github.com/windmeup/goreleaser/internal/tmpl"
+	"github.com/windmeup/goreleaser/pkg/config"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 const (
@@ -170,7 +170,7 @@ func doRun(ctx *context.Context, aur config.AUR, cl client.Client) error {
 			return fmt.Errorf("failed to write %s: %w", info.kind, err)
 		}
 		log.WithField("file", path).Info("writing")
-		if err := os.WriteFile(path, []byte(pkgContent), 0o644); err != nil { //nolint: gosec
+		if err := os.WriteFile(path, []byte(pkgContent), 0o644); err != nil { // nolint: gosec
 			return fmt.Errorf("failed to write %s: %w", info.kind, err)
 		}
 
