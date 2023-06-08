@@ -1,4 +1,4 @@
-module github.com/goreleaser/goreleaser
+module github.com/windmeup/goreleaser
 
 go 1.20
 
@@ -27,6 +27,7 @@ require (
 	github.com/google/ko v0.13.0
 	github.com/google/uuid v1.3.0
 	github.com/goreleaser/fileglob v1.3.0
+	github.com/goreleaser/goreleaser v0.0.0-00010101000000-000000000000
 	github.com/goreleaser/nfpm/v2 v2.30.0
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/imdario/mergo v0.3.16
@@ -259,3 +260,5 @@ require (
 	sigs.k8s.io/kind v0.17.0 // indirect
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
+
+replace github.com/goreleaser/goreleaser => ./
