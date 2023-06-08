@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/pipe"
-	"github.com/goreleaser/goreleaser/pkg/context"
 	"github.com/hashicorp/go-multierror"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/pipe"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 func TestError(t *testing.T) {

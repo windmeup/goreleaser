@@ -11,9 +11,9 @@ import (
 	"time"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/yaml"
 	"github.com/goreleaser/nfpm/v2/files"
 	"github.com/invopop/jsonschema"
+	"github.com/windmeup/goreleaser/internal/yaml"
 )
 
 // Git configs.

@@ -7,11 +7,11 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/internal/testlib"
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/testctx"
+	"github.com/windmeup/goreleaser/internal/testlib"
+	"github.com/windmeup/goreleaser/pkg/config"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 func TestGoModProxy(t *testing.T) {
@@ -221,7 +221,7 @@ func fakeGoMod(tb testing.TB, module string) {
 }
 
 func withGoReleaserModulePath(ctx *context.Context) {
-	ctx.ModulePath = "github.com/goreleaser/goreleaser"
+	ctx.ModulePath = "github.com/windmeup/goreleaser"
 }
 
 func withNfpmModulePath(ctx *context.Context) {

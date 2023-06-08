@@ -3,11 +3,11 @@ package sign
 import (
 	"fmt"
 
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/ids"
-	"github.com/goreleaser/goreleaser/internal/pipe"
-	"github.com/goreleaser/goreleaser/internal/semerrgroup"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/windmeup/goreleaser/internal/artifact"
+	"github.com/windmeup/goreleaser/internal/ids"
+	"github.com/windmeup/goreleaser/internal/pipe"
+	"github.com/windmeup/goreleaser/internal/semerrgroup"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 // Pipe that signs docker images and manifests.

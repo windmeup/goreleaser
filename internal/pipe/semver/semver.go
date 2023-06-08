@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/Masterminds/semver/v3"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 // Pipe is a global hook pipe.

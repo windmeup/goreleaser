@@ -11,8 +11,8 @@ import (
 
 	"github.com/caarlos0/env/v8"
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/windmeup/goreleaser/internal/tmpl"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 const (

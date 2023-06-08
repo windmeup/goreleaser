@@ -8,8 +8,8 @@ import (
 	goversion "github.com/caarlos0/go-version"
 	"github.com/caarlos0/log"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/goreleaser/goreleaser/pkg/context"
 	"github.com/spf13/cobra"
+	"github.com/windmeup/goreleaser/pkg/context"
 	cobracompletefig "github.com/withfig/autocomplete-tools/integrations/cobra"
 )
 

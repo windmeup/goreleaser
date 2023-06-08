@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/golden"
-	"github.com/goreleaser/goreleaser/pkg/config"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/golden"
+	"github.com/windmeup/goreleaser/pkg/config"
 	"golang.org/x/sync/errgroup"
 )
 

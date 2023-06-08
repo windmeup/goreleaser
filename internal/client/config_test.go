@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/pkg/config"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/pkg/config"
 )
 
 func TestRepoFromRef(t *testing.T) {

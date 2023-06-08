@@ -6,9 +6,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/goreleaser/goreleaser/pkg/config"
 	"github.com/invopop/jsonschema"
 	"github.com/spf13/cobra"
+	"github.com/windmeup/goreleaser/pkg/config"
 )
 
 type schemaCmd struct {

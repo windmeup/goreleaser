@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/golden"
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/pkg/config"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/artifact"
+	"github.com/windmeup/goreleaser/internal/golden"
+	"github.com/windmeup/goreleaser/internal/testctx"
+	"github.com/windmeup/goreleaser/pkg/config"
 )
 
 func TestRunWithError(t *testing.T) {
