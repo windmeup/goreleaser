@@ -11,10 +11,10 @@ import (
 	"strings"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/client"
-	"github.com/goreleaser/goreleaser/internal/git"
-	"github.com/goreleaser/goreleaser/internal/tmpl"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/windmeup/goreleaser/internal/client"
+	"github.com/windmeup/goreleaser/internal/git"
+	"github.com/windmeup/goreleaser/internal/tmpl"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 // ErrInvalidSortDirection happens when the sort order is invalid.
@@ -97,7 +97,7 @@ func (Pipe) Run(ctx *context.Context) error {
 
 	path := filepath.Join(ctx.Config.Dist, "CHANGELOG.md")
 	log.WithField("changelog", path).Info("writing")
-	return os.WriteFile(path, []byte(ctx.ReleaseNotes), 0o644) //nolint: gosec
+	return os.WriteFile(path, []byte(ctx.ReleaseNotes), 0o644) // nolint: gosec
 }
 
 type changelogGroup struct {

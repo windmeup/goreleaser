@@ -3,8 +3,8 @@ package testlib
 import (
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/tmpl"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/tmpl"
 )
 
 // RequireTemplateError requires thqt an error happens and that it is a template error.

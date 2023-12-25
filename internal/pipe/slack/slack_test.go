@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/testctx"
-	"github.com/goreleaser/goreleaser/internal/testlib"
-	"github.com/goreleaser/goreleaser/internal/yaml"
-	"github.com/goreleaser/goreleaser/pkg/config"
 	"github.com/slack-go/slack"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/testctx"
+	"github.com/windmeup/goreleaser/internal/testlib"
+	"github.com/windmeup/goreleaser/internal/yaml"
+	"github.com/windmeup/goreleaser/pkg/config"
 )
 
 func TestStringer(t *testing.T) {

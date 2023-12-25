@@ -3,8 +3,8 @@ package config
 import (
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/yaml"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/yaml"
 )
 
 func TestBuildHook_justString(t *testing.T) {

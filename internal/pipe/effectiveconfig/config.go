@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/yaml"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/windmeup/goreleaser/internal/yaml"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 // Pipe that writes the effective config file to dist.
@@ -24,5 +24,5 @@ func (Pipe) Run(ctx *context.Context) (err error) {
 		return err
 	}
 	log.WithField("config", path).Info("writing")
-	return os.WriteFile(path, bts, 0o644) //nolint: gosec
+	return os.WriteFile(path, bts, 0o644) // nolint: gosec
 }

@@ -7,16 +7,16 @@ import (
 
 	"github.com/caarlos0/ctrlc"
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/deprecate"
-	"github.com/goreleaser/goreleaser/internal/logext"
-	"github.com/goreleaser/goreleaser/internal/middleware/errhandler"
-	"github.com/goreleaser/goreleaser/internal/middleware/logging"
-	"github.com/goreleaser/goreleaser/internal/middleware/skip"
-	"github.com/goreleaser/goreleaser/internal/pipe/git"
-	"github.com/goreleaser/goreleaser/internal/pipeline"
-	"github.com/goreleaser/goreleaser/internal/skips"
-	"github.com/goreleaser/goreleaser/pkg/context"
 	"github.com/spf13/cobra"
+	"github.com/windmeup/goreleaser/internal/deprecate"
+	"github.com/windmeup/goreleaser/internal/logext"
+	"github.com/windmeup/goreleaser/internal/middleware/errhandler"
+	"github.com/windmeup/goreleaser/internal/middleware/logging"
+	"github.com/windmeup/goreleaser/internal/middleware/skip"
+	"github.com/windmeup/goreleaser/internal/pipe/git"
+	"github.com/windmeup/goreleaser/internal/pipeline"
+	"github.com/windmeup/goreleaser/internal/skips"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 type releaseCmd struct {

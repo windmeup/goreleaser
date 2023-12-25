@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goreleaser/goreleaser/pkg/config"
 	"github.com/stretchr/testify/require"
 	"github.com/ulikunitz/xz"
+	"github.com/windmeup/goreleaser/pkg/config"
 )
 
 func TestTarXzFile(t *testing.T) {

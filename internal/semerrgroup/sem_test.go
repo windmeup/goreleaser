@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goreleaser/goreleaser/internal/pipe"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/pipe"
 )
 
 func TestSemaphore(t *testing.T) {

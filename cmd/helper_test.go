@@ -3,9 +3,9 @@ package cmd
 import (
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/skips"
-	"github.com/goreleaser/goreleaser/pkg/context"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/skips"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 func requireAll(tb testing.TB, ctx *context.Context, keys ...skips.Key) {

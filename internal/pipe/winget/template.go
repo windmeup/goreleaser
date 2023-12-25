@@ -7,10 +7,10 @@ import (
 	"strings"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/internal/artifact"
-	"github.com/goreleaser/goreleaser/internal/yaml"
-	"github.com/goreleaser/goreleaser/pkg/config"
-	"github.com/goreleaser/goreleaser/pkg/context"
+	"github.com/windmeup/goreleaser/internal/artifact"
+	"github.com/windmeup/goreleaser/internal/yaml"
+	"github.com/windmeup/goreleaser/pkg/config"
+	"github.com/windmeup/goreleaser/pkg/context"
 )
 
 func createYAML(ctx *context.Context, winget config.Winget, in any, tp artifact.Type) error {
@@ -30,7 +30,7 @@ func createYAML(ctx *context.Context, winget config.Winget, in any, tp artifact.
 		generatedHeader,
 		langserverLineFor(tp),
 		string(versionContent),
-	}, "\n")), 0o644); err != nil { //nolint: gosec
+	}, "\n")), 0o644); err != nil { // nolint: gosec
 		return fmt.Errorf("failed to write winget version: %w", err)
 	}
 

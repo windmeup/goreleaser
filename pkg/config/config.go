@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/goreleaser/goreleaser/internal/logext"
-	"github.com/goreleaser/goreleaser/internal/yaml"
 	"github.com/goreleaser/nfpm/v2/files"
 	"github.com/invopop/jsonschema"
+	"github.com/windmeup/goreleaser/internal/logext"
+	"github.com/windmeup/goreleaser/internal/yaml"
 )
 
 type Versioned struct {

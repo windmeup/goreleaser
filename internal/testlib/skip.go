@@ -4,8 +4,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/internal/pipe"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/internal/pipe"
 )
 
 // AssertSkipped asserts that a pipe was skipped.
