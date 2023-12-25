@@ -1,4 +1,4 @@
-module github.com/goreleaser/goreleaser
+module github.com/windmeup/goreleaser
 
 go 1.21
 
@@ -29,6 +29,7 @@ require (
 	github.com/google/ko v0.15.0
 	github.com/google/uuid v1.4.0
 	github.com/goreleaser/fileglob v1.3.0
+	github.com/goreleaser/goreleaser v0.0.0-00010101000000-000000000000
 	github.com/goreleaser/nfpm/v2 v2.34.0
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/invopop/jsonschema v0.12.0
@@ -57,7 +58,6 @@ require (
 )
 
 require (
-	github.com/rogpeppe/go-internal v1.10.0 // indirect
 	github.com/sagikazarmark/locafero v0.3.0 // indirect
 	github.com/sagikazarmark/slog-shim v0.1.0 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect
@@ -276,4 +276,4 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace github.com/goreleaser/goreleaser => github.com/windmeup/goreleaser v1.21.1
+replace github.com/goreleaser/goreleaser => github.com/windmeup/goreleaser v1.21.88
