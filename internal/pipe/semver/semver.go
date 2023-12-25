@@ -2,6 +2,7 @@ package semver
 
 import (
 	"fmt"
+	"strings"
 
 	"github.com/Masterminds/semver/v3"
 	"github.com/goreleaser/goreleaser/pkg/context"
@@ -17,10 +18,15 @@ func (Pipe) String() string {
 
 // Run executes the hooks.
 func (Pipe) Run(ctx *context.Context) error {
-	sv, err := semver.NewVersion(ctx.Git.CurrentTag)
+	version, err := monorepo(ctx)
+	if err != nil {
+		return err
+	}
+	sv, err := semver.NewVersion(version)
 	if err != nil {
 		return fmt.Errorf("failed to parse tag '%s' as semver: %w", ctx.Git.CurrentTag, err)
 	}
+	ctx.Version = strings.TrimPrefix(version, "v")
 	ctx.Semver = context.Semver{
 		Major:      sv.Major(),
 		Minor:      sv.Minor(),
@@ -28,4 +34,13 @@ func (Pipe) Run(ctx *context.Context) error {
 		Prerelease: sv.Prerelease(),
 	}
 	return nil
+}
+
+func monorepo(ctx *context.Context) (string, error) {
+	currentTag := ctx.Git.CurrentTag
+	if prefix := ctx.Config.Monorepo.TagPrefix; !strings.HasPrefix(currentTag, prefix) {
+		return "", fmt.Errorf("failed to parse monorepo tag '%s': must starts with '%s'", currentTag, prefix)
+	}
+	parts := strings.Split(currentTag, "/")
+	return parts[len(parts)-1], nil
 }

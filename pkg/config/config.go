@@ -1203,6 +1203,8 @@ type Project struct {
 	// should be set if using Gitea
 	GiteaURLs GiteaURLs `yaml:"gitea_urls,omitempty" json:"gitea_urls,omitempty"`
 
+	Monorepo Monorepo `yaml:"monorepo,omitempty" json:"monorepo,omitempty"`
+
 	// Deprecated: use Scoops instead.
 	Scoop Scoop `yaml:"scoop,omitempty" json:"scoop,omitempty" jsonschema:"deprecated=true,description=use scoops instead"`
 
