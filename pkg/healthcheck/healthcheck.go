@@ -5,14 +5,14 @@ package healthcheck
 import (
 	"fmt"
 
-	"github.com/goreleaser/goreleaser/v2/internal/pipe/chocolatey"
-	"github.com/goreleaser/goreleaser/v2/internal/pipe/docker"
-	"github.com/goreleaser/goreleaser/v2/internal/pipe/nix"
-	"github.com/goreleaser/goreleaser/v2/internal/pipe/sbom"
-	"github.com/goreleaser/goreleaser/v2/internal/pipe/sign"
-	"github.com/goreleaser/goreleaser/v2/internal/pipe/snapcraft"
-	"github.com/goreleaser/goreleaser/v2/pkg/build"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
+	"github.com/windmeup/goreleaser/v2/internal/pipe/chocolatey"
+	"github.com/windmeup/goreleaser/v2/internal/pipe/docker"
+	"github.com/windmeup/goreleaser/v2/internal/pipe/nix"
+	"github.com/windmeup/goreleaser/v2/internal/pipe/sbom"
+	"github.com/windmeup/goreleaser/v2/internal/pipe/sign"
+	"github.com/windmeup/goreleaser/v2/internal/pipe/snapcraft"
+	"github.com/windmeup/goreleaser/v2/pkg/build"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 )
 
 // Healthchecker should be implemented by pipes that want checks.

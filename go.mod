@@ -1,4 +1,4 @@
-module github.com/goreleaser/goreleaser/v2
+module github.com/windmeup/goreleaser/v2
 
 go 1.23.0
 

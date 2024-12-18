@@ -9,11 +9,11 @@ import (
 	"github.com/caarlos0/ctrlc"
 	"github.com/caarlos0/log"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/goreleaser/goreleaser/v2/internal/middleware/skip"
-	"github.com/goreleaser/goreleaser/v2/internal/pipe/defaults"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
-	"github.com/goreleaser/goreleaser/v2/pkg/healthcheck"
 	"github.com/spf13/cobra"
+	"github.com/windmeup/goreleaser/v2/internal/middleware/skip"
+	"github.com/windmeup/goreleaser/v2/internal/pipe/defaults"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
+	"github.com/windmeup/goreleaser/v2/pkg/healthcheck"
 )
 
 type healthcheckCmd struct {

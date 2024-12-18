@@ -4,7 +4,7 @@ import (
 	"context"
 	"runtime"
 
-	"github.com/goreleaser/goreleaser/dagger/internal/dagger"
+	"github.com/windmeup/goreleaser/dagger/internal/dagger"
 )
 
 // Run Goreleaser

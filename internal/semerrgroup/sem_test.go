@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goreleaser/goreleaser/v2/internal/pipe"
 	"github.com/hashicorp/go-multierror"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/pipe"
 )
 
 func TestBlockingFirst(t *testing.T) {

@@ -6,8 +6,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/goreleaser/goreleaser/v2/internal/experimental"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
+	"github.com/windmeup/goreleaser/v2/internal/experimental"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 )
 
 type Pipe struct{}

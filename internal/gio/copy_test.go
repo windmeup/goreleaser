@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/v2/internal/testlib"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/testlib"
 )
 
 func TestCopy(t *testing.T) {

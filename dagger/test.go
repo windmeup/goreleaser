@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/goreleaser/goreleaser/dagger/internal/dagger"
+	"github.com/windmeup/goreleaser/dagger/internal/dagger"
 )
 
 const (

@@ -6,8 +6,8 @@ import (
 	"regexp"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/v2/internal/static"
 	"github.com/spf13/cobra"
+	"github.com/windmeup/goreleaser/v2/internal/static"
 )
 
 type initCmd struct {

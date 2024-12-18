@@ -3,8 +3,8 @@ package gio
 import (
 	"testing"
 
-	"github.com/goreleaser/goreleaser/v2/internal/testlib"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/testlib"
 )
 
 func TestEqualFilesError(t *testing.T) {

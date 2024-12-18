@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goreleaser/goreleaser/v2/internal/artifact"
-	"github.com/goreleaser/goreleaser/v2/internal/testctx"
-	"github.com/goreleaser/goreleaser/v2/internal/testlib"
-	api "github.com/goreleaser/goreleaser/v2/pkg/build"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/artifact"
+	"github.com/windmeup/goreleaser/v2/internal/testctx"
+	"github.com/windmeup/goreleaser/v2/internal/testlib"
+	api "github.com/windmeup/goreleaser/v2/pkg/build"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
 )
 
 func TestAllowConcurrentBuilds(t *testing.T) {

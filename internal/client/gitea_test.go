@@ -10,15 +10,15 @@ import (
 	"testing"
 
 	"code.gitea.io/sdk/gitea"
-	"github.com/goreleaser/goreleaser/v2/internal/artifact"
-	"github.com/goreleaser/goreleaser/v2/internal/testctx"
-	"github.com/goreleaser/goreleaser/v2/internal/tmpl"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
 	"github.com/jarcoal/httpmock"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
+	"github.com/windmeup/goreleaser/v2/internal/artifact"
+	"github.com/windmeup/goreleaser/v2/internal/testctx"
+	"github.com/windmeup/goreleaser/v2/internal/tmpl"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 )
 
 type GetInstanceURLSuite struct {

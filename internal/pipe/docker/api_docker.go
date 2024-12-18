@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 )
 
 func init() {

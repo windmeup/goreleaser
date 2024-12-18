@@ -8,14 +8,14 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/v2/internal/artifact"
-	"github.com/goreleaser/goreleaser/v2/internal/client"
-	"github.com/goreleaser/goreleaser/v2/internal/golden"
-	"github.com/goreleaser/goreleaser/v2/internal/skips"
-	"github.com/goreleaser/goreleaser/v2/internal/testctx"
-	"github.com/goreleaser/goreleaser/v2/internal/testlib"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/artifact"
+	"github.com/windmeup/goreleaser/v2/internal/client"
+	"github.com/windmeup/goreleaser/v2/internal/golden"
+	"github.com/windmeup/goreleaser/v2/internal/skips"
+	"github.com/windmeup/goreleaser/v2/internal/testctx"
+	"github.com/windmeup/goreleaser/v2/internal/testlib"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
 )
 
 func TestContinueOnError(t *testing.T) {
@@ -67,7 +67,7 @@ func TestPrefetcher(t *testing.T) {
 			t.Run("valid", func(t *testing.T) {
 				testlib.CheckPath(t, "nix-prefetch-url")
 				testlib.SkipIfWindows(t, "nix doesn't work on windows")
-				sha, err := publishShaPrefetcher{nixPrefetchURLBin}.Prefetch("https://github.com/goreleaser/goreleaser/releases/download/v1.18.2/goreleaser_Darwin_arm64.tar.gz")
+				sha, err := publishShaPrefetcher{nixPrefetchURLBin}.Prefetch("https://github.com/windmeup/goreleaser/releases/download/v1.18.2/goreleaser_Darwin_arm64.tar.gz")
 				require.NoError(t, err)
 				require.Equal(t, "0girjxp07srylyq36xk1ska8p68m2fhp05xgyv4wkcl61d6rzv3y", sha)
 			})

@@ -14,15 +14,15 @@ import (
 
 	"dario.cat/mergo"
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/v2/internal/artifact"
-	"github.com/goreleaser/goreleaser/v2/internal/builders/buildtarget"
-	"github.com/goreleaser/goreleaser/v2/internal/experimental"
-	"github.com/goreleaser/goreleaser/v2/internal/gio"
-	"github.com/goreleaser/goreleaser/v2/internal/logext"
-	"github.com/goreleaser/goreleaser/v2/internal/tmpl"
-	api "github.com/goreleaser/goreleaser/v2/pkg/build"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
+	"github.com/windmeup/goreleaser/v2/internal/artifact"
+	"github.com/windmeup/goreleaser/v2/internal/builders/buildtarget"
+	"github.com/windmeup/goreleaser/v2/internal/experimental"
+	"github.com/windmeup/goreleaser/v2/internal/gio"
+	"github.com/windmeup/goreleaser/v2/internal/logext"
+	"github.com/windmeup/goreleaser/v2/internal/tmpl"
+	api "github.com/windmeup/goreleaser/v2/pkg/build"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 )
 
 // Default builder instance.

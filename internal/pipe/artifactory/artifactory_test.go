@@ -10,11 +10,11 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/v2/internal/artifact"
-	"github.com/goreleaser/goreleaser/v2/internal/testctx"
-	"github.com/goreleaser/goreleaser/v2/internal/testlib"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/artifact"
+	"github.com/windmeup/goreleaser/v2/internal/testctx"
+	"github.com/windmeup/goreleaser/v2/internal/testlib"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
 )
 
 var (

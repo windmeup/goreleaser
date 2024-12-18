@@ -6,8 +6,8 @@ import (
 	"os"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/v2/internal/logext"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
+	"github.com/windmeup/goreleaser/v2/internal/logext"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
 )
 
 func loadConfig(path string) (config.Project, error) {

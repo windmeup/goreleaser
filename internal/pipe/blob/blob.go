@@ -4,10 +4,10 @@ package blob
 import (
 	"errors"
 
-	"github.com/goreleaser/goreleaser/v2/internal/pipe"
-	"github.com/goreleaser/goreleaser/v2/internal/semerrgroup"
-	"github.com/goreleaser/goreleaser/v2/internal/tmpl"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
+	"github.com/windmeup/goreleaser/v2/internal/pipe"
+	"github.com/windmeup/goreleaser/v2/internal/semerrgroup"
+	"github.com/windmeup/goreleaser/v2/internal/tmpl"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 )
 
 // Pipe for blobs.

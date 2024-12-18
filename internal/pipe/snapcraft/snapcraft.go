@@ -12,16 +12,16 @@ import (
 	"strings"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/v2/internal/artifact"
-	"github.com/goreleaser/goreleaser/v2/internal/gio"
-	"github.com/goreleaser/goreleaser/v2/internal/ids"
-	"github.com/goreleaser/goreleaser/v2/internal/pipe"
-	"github.com/goreleaser/goreleaser/v2/internal/semerrgroup"
-	"github.com/goreleaser/goreleaser/v2/internal/skips"
-	"github.com/goreleaser/goreleaser/v2/internal/tmpl"
-	"github.com/goreleaser/goreleaser/v2/internal/yaml"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
+	"github.com/windmeup/goreleaser/v2/internal/artifact"
+	"github.com/windmeup/goreleaser/v2/internal/gio"
+	"github.com/windmeup/goreleaser/v2/internal/ids"
+	"github.com/windmeup/goreleaser/v2/internal/pipe"
+	"github.com/windmeup/goreleaser/v2/internal/semerrgroup"
+	"github.com/windmeup/goreleaser/v2/internal/skips"
+	"github.com/windmeup/goreleaser/v2/internal/tmpl"
+	"github.com/windmeup/goreleaser/v2/internal/yaml"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 )
 
 const releasesExtra = "releases"
@@ -343,7 +343,7 @@ func create(ctx *context.Context, snap config.Snapcraft, arch string, binaries [
 		}
 
 		// TODO: test that the correct binary is used in Command
-		// See https://github.com/goreleaser/goreleaser/pull/1449
+		// See https://github.com/windmeup/goreleaser/pull/1449
 		appMetadata := AppMetadata{
 			Command: strings.TrimSpace(strings.Join([]string{
 				command,

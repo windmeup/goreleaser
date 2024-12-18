@@ -10,20 +10,20 @@ import (
 
 	"github.com/caarlos0/go-shellwords"
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/v2/internal/deprecate"
-	"github.com/goreleaser/goreleaser/v2/internal/ids"
-	"github.com/goreleaser/goreleaser/v2/internal/semerrgroup"
-	"github.com/goreleaser/goreleaser/v2/internal/shell"
-	"github.com/goreleaser/goreleaser/v2/internal/skips"
-	"github.com/goreleaser/goreleaser/v2/internal/tmpl"
-	builders "github.com/goreleaser/goreleaser/v2/pkg/build"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
+	"github.com/windmeup/goreleaser/v2/internal/deprecate"
+	"github.com/windmeup/goreleaser/v2/internal/ids"
+	"github.com/windmeup/goreleaser/v2/internal/semerrgroup"
+	"github.com/windmeup/goreleaser/v2/internal/shell"
+	"github.com/windmeup/goreleaser/v2/internal/skips"
+	"github.com/windmeup/goreleaser/v2/internal/tmpl"
+	builders "github.com/windmeup/goreleaser/v2/pkg/build"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 
 	// langs to init.
-	_ "github.com/goreleaser/goreleaser/v2/internal/builders/golang"
-	_ "github.com/goreleaser/goreleaser/v2/internal/builders/rust"
-	_ "github.com/goreleaser/goreleaser/v2/internal/builders/zig"
+	_ "github.com/windmeup/goreleaser/v2/internal/builders/golang"
+	_ "github.com/windmeup/goreleaser/v2/internal/builders/rust"
+	_ "github.com/windmeup/goreleaser/v2/internal/builders/zig"
 )
 
 // Pipe for build.

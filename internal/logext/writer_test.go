@@ -8,9 +8,9 @@ import (
 
 	"github.com/caarlos0/log"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/goreleaser/goreleaser/v2/internal/golden"
 	"github.com/muesli/termenv"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/golden"
 )
 
 func TestWriter(t *testing.T) {

@@ -6,9 +6,9 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/goreleaser/goreleaser/v2/internal/cargo"
-	"github.com/goreleaser/goreleaser/v2/internal/git"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
+	"github.com/windmeup/goreleaser/v2/internal/cargo"
+	"github.com/windmeup/goreleaser/v2/internal/git"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 )
 
 // Pipe implements defaulter to set the project name.

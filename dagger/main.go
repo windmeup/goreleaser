@@ -2,7 +2,7 @@
 
 package main
 
-import "github.com/goreleaser/goreleaser/dagger/internal/dagger"
+import "github.com/windmeup/goreleaser/dagger/internal/dagger"
 
 type Goreleaser struct {
 	// +private
@@ -17,7 +17,7 @@ func New(
 ) *Goreleaser {
 	if Source == nil {
 		Source = dag.Git(
-			"https://github.com/goreleaser/goreleaser.git",
+			"https://github.com/windmeup/goreleaser.git",
 			dagger.GitOpts{KeepGitDir: true},
 		).
 			Branch("main").

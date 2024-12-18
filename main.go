@@ -8,8 +8,8 @@ import (
 	goversion "github.com/caarlos0/go-version"
 	"github.com/caarlos0/log"
 	"github.com/charmbracelet/lipgloss"
-	"github.com/goreleaser/goreleaser/v2/cmd"
 	"github.com/muesli/termenv"
+	"github.com/windmeup/goreleaser/v2/cmd"
 	"go.uber.org/automaxprocs/maxprocs"
 )
 

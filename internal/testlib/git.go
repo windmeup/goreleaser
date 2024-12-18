@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/charmbracelet/keygen"
-	"github.com/goreleaser/goreleaser/v2/internal/git"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/git"
 )
 
 // GitInit inits a new git project.

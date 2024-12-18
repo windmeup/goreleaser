@@ -7,7 +7,7 @@ import (
 	"regexp"
 
 	"github.com/caarlos0/log"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
 )
 
 type target struct {
@@ -143,7 +143,7 @@ func allBuildTargets(build config.Build) (targets []target) {
 }
 
 // TODO: this could be improved by using a map.
-// https://github.com/goreleaser/goreleaser/pull/522#discussion_r164245014
+// https://github.com/windmeup/goreleaser/pull/522#discussion_r164245014
 func ignored(build config.Build, target target) bool {
 	for _, ig := range build.Ignore {
 		if ig.Goos != "" && ig.Goos != target.os {

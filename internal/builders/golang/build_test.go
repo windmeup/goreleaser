@@ -10,15 +10,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goreleaser/goreleaser/v2/internal/artifact"
-	"github.com/goreleaser/goreleaser/v2/internal/experimental"
-	"github.com/goreleaser/goreleaser/v2/internal/testctx"
-	"github.com/goreleaser/goreleaser/v2/internal/testlib"
-	"github.com/goreleaser/goreleaser/v2/internal/tmpl"
-	api "github.com/goreleaser/goreleaser/v2/pkg/build"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/artifact"
+	"github.com/windmeup/goreleaser/v2/internal/experimental"
+	"github.com/windmeup/goreleaser/v2/internal/testctx"
+	"github.com/windmeup/goreleaser/v2/internal/testlib"
+	"github.com/windmeup/goreleaser/v2/internal/tmpl"
+	api "github.com/windmeup/goreleaser/v2/pkg/build"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 )
 
 var runtimeTarget = runtime.GOOS + "_" + runtime.GOARCH
@@ -935,7 +935,7 @@ func TestBuildTests(t *testing.T) {
 
 func TestRunPipeWithProxiedRepo(t *testing.T) {
 	folder := testlib.Mktmp(t)
-	out, err := exec.Command("git", "clone", "https://github.com/goreleaser/goreleaser", "-b", "v0.161.1", "--depth=1", ".").CombinedOutput()
+	out, err := exec.Command("git", "clone", "https://github.com/windmeup/goreleaser", "-b", "v0.161.1", "--depth=1", ".").CombinedOutput()
 	require.NoError(t, err, string(out))
 
 	proxied := filepath.Join(folder, "dist/proxy/default")
@@ -945,13 +945,13 @@ func TestRunPipeWithProxiedRepo(t *testing.T) {
 		[]byte(`// +build main
 package main
 
-import _ "github.com/goreleaser/goreleaser"
+import _ "github.com/windmeup/goreleaser"
 `),
 		0o666,
 	))
 	require.NoError(t, os.WriteFile(
 		filepath.Join(proxied, "go.mod"),
-		[]byte("module foo\nrequire github.com/goreleaser/goreleaser v0.161.1"),
+		[]byte("module foo\nrequire github.com/windmeup/goreleaser v0.161.1"),
 		0o666,
 	))
 
@@ -966,7 +966,7 @@ import _ "github.com/goreleaser/goreleaser"
 		Builds: []config.Build{
 			{
 				Binary:        "foo",
-				Main:          "github.com/goreleaser/goreleaser",
+				Main:          "github.com/windmeup/goreleaser",
 				Dir:           proxied,
 				UnproxiedMain: ".",
 				UnproxiedDir:  ".",

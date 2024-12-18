@@ -3,8 +3,8 @@ package client
 import (
 	"testing"
 
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
 )
 
 func TestGetReleaseNotes(t *testing.T) {

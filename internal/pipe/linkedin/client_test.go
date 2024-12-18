@@ -8,8 +8,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/v2/internal/testctx"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/testctx"
 )
 
 func TestCreateLinkedInClient(t *testing.T) {

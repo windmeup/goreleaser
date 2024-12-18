@@ -2,8 +2,8 @@
 package prebuild
 
 import (
-	"github.com/goreleaser/goreleaser/v2/internal/tmpl"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
+	"github.com/windmeup/goreleaser/v2/internal/tmpl"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 )
 
 // Pipe for build.

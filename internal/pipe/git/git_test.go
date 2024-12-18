@@ -6,11 +6,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/v2/internal/skips"
-	"github.com/goreleaser/goreleaser/v2/internal/testctx"
-	"github.com/goreleaser/goreleaser/v2/internal/testlib"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/skips"
+	"github.com/windmeup/goreleaser/v2/internal/testctx"
+	"github.com/windmeup/goreleaser/v2/internal/testlib"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
 )
 
 func TestDescription(t *testing.T) {
@@ -153,7 +153,7 @@ func TestShallowClone(t *testing.T) {
 			"git", "clone",
 			"--depth", "1",
 			"--branch", "v0.160.0",
-			"https://github.com/goreleaser/goreleaser",
+			"https://github.com/windmeup/goreleaser",
 			folder,
 		).Run(),
 	)

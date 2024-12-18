@@ -7,10 +7,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/v2/internal/testctx"
-	"github.com/goreleaser/goreleaser/v2/internal/testlib"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/testctx"
+	"github.com/windmeup/goreleaser/v2/internal/testlib"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
 )
 
 func TestSkip(t *testing.T) {
@@ -43,7 +43,7 @@ func TestRun(t *testing.T) {
 	ctx := testctx.New()
 	require.NoError(t, Pipe{}.Default(ctx))
 	require.NoError(t, Pipe{}.Run(ctx))
-	require.Equal(t, "github.com/goreleaser/goreleaser/v2", ctx.ModulePath)
+	require.Equal(t, "github.com/windmeup/goreleaser/v2", ctx.ModulePath)
 }
 
 func TestRunGoWork(t *testing.T) {
@@ -81,7 +81,7 @@ func TestRunCustomMod(t *testing.T) {
 	})
 	require.NoError(t, Pipe{}.Default(ctx))
 	require.NoError(t, Pipe{}.Run(ctx))
-	require.Equal(t, "github.com/goreleaser/goreleaser/v2", ctx.ModulePath)
+	require.Equal(t, "github.com/windmeup/goreleaser/v2", ctx.ModulePath)
 }
 
 func TestCustomEnv(t *testing.T) {

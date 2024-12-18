@@ -7,7 +7,7 @@ import (
 
 	_ "embed"
 
-	"github.com/goreleaser/goreleaser/v2/internal/tmpl"
+	"github.com/windmeup/goreleaser/v2/internal/tmpl"
 )
 
 var (

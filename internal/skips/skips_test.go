@@ -5,9 +5,9 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/v2/internal/skips"
-	"github.com/goreleaser/goreleaser/v2/internal/testctx"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/skips"
+	"github.com/windmeup/goreleaser/v2/internal/testctx"
 )
 
 func TestString(t *testing.T) {

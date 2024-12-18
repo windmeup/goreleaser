@@ -9,11 +9,11 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/goreleaser/goreleaser/v2/internal/testctx"
-	"github.com/goreleaser/goreleaser/v2/internal/testlib"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
-	"github.com/goreleaser/goreleaser/v2/pkg/context"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/testctx"
+	"github.com/windmeup/goreleaser/v2/internal/testlib"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
+	"github.com/windmeup/goreleaser/v2/pkg/context"
 )
 
 func TestString(t *testing.T) {
@@ -306,7 +306,7 @@ func fakeGoMod(tb testing.TB, module string) {
 }
 
 func withGoReleaserModulePath(ctx *context.Context) {
-	ctx.ModulePath = "github.com/goreleaser/goreleaser"
+	ctx.ModulePath = "github.com/windmeup/goreleaser"
 }
 
 func withNfpmModulePath(ctx *context.Context) {

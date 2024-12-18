@@ -8,13 +8,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/goreleaser/goreleaser/v2/internal/artifact"
-	"github.com/goreleaser/goreleaser/v2/internal/client"
-	"github.com/goreleaser/goreleaser/v2/internal/golden"
-	"github.com/goreleaser/goreleaser/v2/internal/skips"
-	"github.com/goreleaser/goreleaser/v2/internal/testctx"
-	"github.com/goreleaser/goreleaser/v2/pkg/config"
 	"github.com/stretchr/testify/require"
+	"github.com/windmeup/goreleaser/v2/internal/artifact"
+	"github.com/windmeup/goreleaser/v2/internal/client"
+	"github.com/windmeup/goreleaser/v2/internal/golden"
+	"github.com/windmeup/goreleaser/v2/internal/skips"
+	"github.com/windmeup/goreleaser/v2/internal/testctx"
+	"github.com/windmeup/goreleaser/v2/pkg/config"
 )
 
 func TestContinueOnError(t *testing.T) {
@@ -105,7 +105,7 @@ func TestRunPipe(t *testing.T) {
 				Homepage:        "https://goreleaser.com",
 				License:         "MIT",
 				LicenseURL:      "https://goreleaser.com/eula/",
-				ReleaseNotesURL: "https://github.com/goreleaser/goreleaser/tags/{{.Tag}}",
+				ReleaseNotesURL: "https://github.com/windmeup/goreleaser/tags/{{.Tag}}",
 				ReleaseNotes:    "{{.Changelog}}",
 				Tags:            []string{"foo", "bar"},
 			},
@@ -145,7 +145,7 @@ func TestRunPipe(t *testing.T) {
 				Homepage:         "https://goreleaser.com",
 				License:          "mit",
 				LicenseURL:       "https://goreleaser.com/license",
-				ReleaseNotesURL:  "https://github.com/goreleaser/goreleaser/tags/{{.Tag}}",
+				ReleaseNotesURL:  "https://github.com/windmeup/goreleaser/tags/{{.Tag}}",
 				ShortDescription: "foo bar zaz",
 				Repository: config.RepoRef{
 					Owner: "foo",
